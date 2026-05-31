@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Footwear | Premium Luxury Showroom</title>
+    
+    <!-- Meta tags for premium branding & SEO -->
+    <meta name="description" content="Step into confidence with Suryansh Footwear. Experience pristine craftsmanship, custom orthopedic support, and premium leather footwear designed for comfort and style.">
+    <meta name="keywords" content="luxury shoes, premium footwear, hand-crafted leather shoes, custom shoe fitting, Suryansh footwear">
+    
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons for visual indicators -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local Custom Premium Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo">SURYANSH<span>.</span></a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#propositions">Our Values</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Book Fitting</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cart-toggle" aria-label="Open Shopping Bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cart-badge-count">0</span>
+                </button>
+                <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Step Into Confidence.<br>Crafted For Every Journey.</h1>
+            <p>Discover an unmatched blend of uncompromising durability, pristine craftsmanship, and global styles designed to elevate your look.</p>
+            <div class="cta-group">
+                <a href="#collections" class="btn btn-primary">
+                    Shop Collections <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Book Custom Fitting <i class="fa-solid fa-calendar-days"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="product-category" style="color: var(--gold); display: block; margin-bottom: 0.5rem;">OUR LEGACY</span>
+                    <h3>Pioneering Pristine Comfort Since 2011</h3>
+                    <p>At Suryansh Footwear, we believe that premium shoes are more than just accessories—they are the foundation of your confidence and health. Every pair we construct undergoes rigorous detailing, blending age-old handcrafting techniques with modern orthopedic support.</p>
+                    <p>We source only high-grade full-grain leather, premium suedes, and performance textiles to guarantee durability. Our tailored fitting showroom is engineered to match shoes perfectly with your gait and foot shape.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>Years Heritage</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50k+</h4>
+                            <p>Happy Feet</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Handmade Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=800" alt="Suryansh Premium Shoemaker Craftsmanship">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE COLLECTIONS SECTION -->
+    <section class="collections" id="collections">
+        <div class="section-container">
+            <h2 class="section-title">The Showroom Collections</h2>
+            
+            <!-- Category Filtering buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Styles</button>
+                <button class="filter-btn" data-filter="classics">Executive Classics</button>
+                <button class="filter-btn" data-filter="athletic">Performance Active</button>
+                <button class="filter-btn" data-filter="heels">Luxury Heels</button>
+                <button class="filter-btn" data-filter="sneakers">Urban Sneakers</button>
+            </div>
+
+            <!-- Products Grid - populated with rich real product layouts -->
+            <div class="products-grid" id="products-container">
+                <!-- Products will be generated dynamically by JS for smooth operations,
+                     but we'll write full support to keep load elegant. -->
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE PROPOSITIONS SECTION -->
+    <section class="props" id="propositions">
+        <div class="section-container">
+            <h2 class="section-title">Our Premium Standards</h2>
+            
+            <div class="props-grid">
+                <div class="prop-item">
+                    <div class="icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Full-Grain Materials</h3>
+                    <p>We exclusively utilize full-grain Italian leathers and premium organic suedes that develop a beautiful character with age.</p>
+                </div>
+                
+                <div class="prop-item">
+                    <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Gait-Aligned Insoles</h3>
+                    <p>Our multi-layered orthopedic footbeds provide unmatched arch support, absorbing shock and protecting your joints.</p>
+                </div>
+                
+                <div class="prop-item">
+                    <div class="icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                    <h3>Custom Foot Tuning</h3>
+                    <p>Visit our showroom to get your exact pressure points mapped for personalized shoe adjustments and lifetime guarantee.</p>
+                </div>
+                
+                <div class="prop-item">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Lifetime Guarantee</h3>
+                    <p>Every pair purchased from Suryansh includes lifetime complimentary heel polishing and lace replacement services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SLIDER SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <h2 class="section-title">Voice of Excellence</h2>
+            
+            <div class="slider-container">
+                <div class="testimonial-track" id="testimonial-track">
+                    
+                    <div class="testimonial-slide">
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">"Suryansh leathers are incredibly supple. The Executive Brogues fit like a second skin right out of the box, with absolutely no break-in pain. Truly outstanding."</p>
+                        <div class="test-user">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Rajesh Sharma" class="test-avatar">
+                            <div class="test-meta">
+                                <h4>Rajesh Sharma</h4>
+                                <p>Corporate Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">"Their customized active sneakers saved my marathon prep. The custom orthopedic arch-tuning has resolved my plantar fasciitis completely. I am forever grateful."</p>
+                        <div class="test-user">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Ananya Sen" class="test-avatar">
+                            <div class="test-meta">
+                                <h4>Ananya Sen</h4>
+                                <p>Professional Marathoner</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-text">"The stilettos from their Luxury collection are a work of art. I wore them for an entire 8-hour gala without any discomfort. Unparalleled design and luxury craftsmanship!"</p>
+                        <div class="test-user">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Priya Kapoor" class="test-avatar">
+                            <div class="test-meta">
+                                <h4>Priya Kapoor</h4>
+                                <p>Fashion Stylist</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="slider-nav">
+                    <button class="slider-btn" id="prev-test" aria-label="Previous Review">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn" id="next-test" aria-label="Next Review">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-wrapper">
+                <div class="contact-info-panel">
+                    <h3>Visit Our Royal Showroom</h3>
+                    <p>Immerse yourself in our premier collections and get a customized gait analysis. Book an appointment today to secure personal styling assistance.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Luxury Fitting Showroom</h4>
+                                <p>12, Grand Galleria, Connaught Place,<br>New Delhi, 110001, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Direct Helpline</h4>
+                                <p>+91 11 4321 8765<br>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Styling & Orders Email</h4>
+                                <p>lounge@suryanshfootwear.com<br>customfit@suryansh.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium appointment booking form -->
+                <div class="contact-form-container">
+                    <h3>Book Your VIP Lounge Session</h3>
+                    <p>Complimentary personal consulting, gait-scan, and sizing fitting.</p>
+                    
+                    <form id="fitting-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-shoe-type">Desired Style Category</label>
+                                <select id="form-shoe-type">
+                                    <option value="classics">Executive Classics</option>
+                                    <option value="athletic">Performance Active</option>
+                                    <option value="heels">Luxury Heels</option>
+                                    <option value="sneakers">Urban Sneakers</option>
+                                    <option value="bespoke">Bespoke Custom Shoe</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-date">Preferred Styling Date</label>
+                                <input type="date" id="form-date" required>
+                            </div>
+                            
+                            <div class="form-group form-group-full">
+                                <label for="form-notes">Special Fitting Notes / Orthopedic Requests</label>
+                                <textarea id="form-notes" rows="4" placeholder="Mention any sizing issues, arch heights, or color preferences..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Request Appointment <i class="fa-solid fa-calendar-check"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART DRAWER PANEL -->
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Shopping <span>Bag</span></h3>
+            <button class="close-cart-btn" id="close-cart" aria-label="Close Bag">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <!-- Cart Items list container -->
+        <div class="cart-items" id="cart-items-container">
+            <!-- Rendered by JS dynamically -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Estimated Subtotal</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkout-btn">
+                Proceed to Checkout <i class="fa-solid fa-credit-card"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW DETAIL MODAL -->
+    <div class="modal" id="quickview-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" id="close-modal" aria-label="Close details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-gallery">
+                <div class="modal-main-img-wrap">
+                    <img src="" alt="Footwear detail" id="modal-image" class="modal-main-img">
+                </div>
+            </div>
+            
+            <div class="modal-details">
+                <span class="modal-category" id="modal-category">EXECUTIVE CLASSICS</span>
+                <h3 class="modal-title" id="modal-title">Cognac Goodyear Welted Brogues</h3>
+                
+                <div class="modal-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span id="modal-reviews-count">(48 Verified Buyers)</span>
+                </div>
+                
+                <div class="modal-price" id="modal-price">$280.00</div>
+                <p class="modal-desc" id="modal-desc">
+                    Hand-crafted from select, vegetable-tanned French calfskin leather. These brogues feature meticulous wingtip perforation and a durable Goodyear welt construct that allows resoling for decades.
+                </p>
+                
+                <div class="modal-options">
+                    <div class="option-group">
+                        <div class="option-label">Select Sizing (UK/US)</div>
+                        <div class="size-selector">
+                            <button class="size-btn">7</button>
+                            <button class="size-btn active">8</button>
+                            <button class="size-btn">9</button>
+                            <button class="size-btn">10</button>
+                            <button class="size-btn">11</button>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <div class="option-label">Available Finishes</div>
+                        <div class="color-selector">
+                            <span class="color-dot active" style="--dot-color: #5c4033;" data-color="Cognac"></span>
+                            <span class="color-dot" style="--dot-color: #2b1d16;" data-color="Espresso"></span>
+                            <span class="color-dot" style="--dot-color: #000000;" data-color="Onyx"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn btn-primary modal-add-btn" id="modal-add-to-cart">
+                        Add to Bag <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST ALERT CONTAINER -->
+    <div class="toast-notification" id="toast-alert">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Success notification!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3>SURYANSH<span>.</span></h3>
+                <p>Curating the world's finest footwear experience, blending traditional shoemaking heritage with state-of-the-art orthopedic engineering.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#collections">Executive Classics</a></li>
+                    <li><a href="#collections">Performance Active</a></li>
+                    <li><a href="#collections">Luxury Heels</a></li>
+                    <li><a href="#collections">Urban Sneakers</a></li>
+                    <li><a href="#collections">Bespoke Craft</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Support & Care</h4>
+                <ul>
+                    <li><a href="#">Shoe Sizing Guide</a></li>
+                    <li><a href="#">Leather Repair Care</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#contact">Book Fitting</a></li>
+                    <li><a href="#">VIP Loyalty Lounge</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Royal Newsletter</h4>
+                <p>Subscribe to receive early releases, exclusive fitting invites, and custom care tips.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Newsletter email">
+                    <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Suryansh Footwear Showroom. All Rights Reserved. Designed by Antigravity AI.</p>
+            <p>
+                <a href="#" style="color: inherit; text-decoration: none; margin-right: 1.5rem;">Terms of Service</a>
+                <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Local Custom Premium JS Module -->
+    <script src="app.js"></script>
+</body>
+</html>
